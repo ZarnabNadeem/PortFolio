@@ -13,8 +13,8 @@ const projects = [
   {
     name: "My Portfolio",
     imageUrl: "/images/projects/portfolio.png",
-    vercelUrl: "https://your-vercel-link.com/project2",
-    githubUrl: "https://github.com/your-repo/project2",
+    vercelUrl: "https://zarnadeem-portfolio.vercel.app/",
+    githubUrl: "https://github.com/ZarnabNadeem/portfolio",
   },
   {
     name: "To-Do List",
