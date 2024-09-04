@@ -1,0 +1,105 @@
+.contact-form-container {
+  background-color: #beddf8;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.contact-form-container h2 {
+  text-align: center;
+  /* font-weight: bold; */
+  margin-bottom: 20px;
+  color: #0961a8;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.contact-form:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #285377;
+  border-radius: 5px;
+  color: #0961a8;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  background-color: #f7f7f7; /* Light gray background */
+  width: 100%; /* Full width */
+  height: 40px; /* Increased height */
+  box-sizing: border-box;
+}
+
+.contact-form input:hover,
+.contact-form textarea:hover {
+  border-color: #0961a8;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #0961a8;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form textarea {
+  height: 100px;
+  resize: none;
+}
+
+.contact-form button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #0961a8;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #285377;
+  transform: scale(1.05);
+}
+
+.contact-form button:active {
+  transform: scale(0.95);
+}
+
+@media (max-width: 480px) {
+  .contact-form {
+    width: 90%;
+  }
+}
+@media (min-width: 1200px) {
+  .contact-form {
+    max-width: 600px; /* Increased max-width */
+  }
+  .contact-form input,
+  .contact-form textarea {
+    height: 50px; /* Increased height */
+    font-size: 18px; /* Increased font size */
+  }
+  .contact-form textarea {
+    height: 150px; /* Increased height */
+  }
+  .contact-form button {
+    padding: 15px; /* Increased padding */
+    font-size: 18px; /* Increased font size */
+  }
+}

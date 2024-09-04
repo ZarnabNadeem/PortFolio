@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Outfit", sans-serif;
+}
+
+h1,
+h4,
+p,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: #0961a8;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+/* From Uiverse.io by Navarog21 */
+.button {
+  width: 7rem;
+  position: relative;
+  height: 2.6em;
+  border: 3px ridge #149cea;
+  outline: none;
+  background-color: transparent;
+  color: #80bced;
+  transition: 1s;
+  border-radius: 0.3em;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.button::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 3%;
+  width: 95%;
+  height: 40%;
+  background-color: transparent;
+  transition: 0.5s;
+  transform-origin: center;
+}
+
+.button::before {
+  content: "";
+  transform-origin: center;
+  position: absolute;
+  top: 80%;
+  left: 3%;
+  width: 95%;
+  height: 40%;
+  background-color: transparent;
+  transition: 0.5s;
+}
+
+.button:hover::before,
+.button:hover::after {
+  transform: scale(0);
+}
+
+.button:hover {
+  box-shadow: inset 0px 0px 25px #1479ea;
+}

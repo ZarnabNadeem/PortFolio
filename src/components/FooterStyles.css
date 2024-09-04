@@ -1,0 +1,24 @@
+.footer {
+  width: 100%;
+  padding: 3rem 0;
+  background-color: #a5cdf0;
+  display: flex;
+}
+.footer-container {
+  max-width: 1140px;
+  margin: auto;
+}
+
+.left {
+  height: 100%;
+  max-width: 100%;
+
+  padding: 1rem;
+  justify-content: space-around;
+}
+.down {
+  text-align: center;
+}
+.footer h6:hover {
+  color: #ffffff;
+}
