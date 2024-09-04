@@ -7,8 +7,9 @@ const ProjectContent = ({ name, imageUrl, vercelUrl, githubUrl }) => {
     <div className="card">
       <a href={vercelUrl} target="_blank" rel="noopener noreferrer">
         <img className="card-image" src={imageUrl} alt={name} />
+
+        <h6 className="card-title">{name}</h6>
       </a>
-      <h6 className="card-title">{name}</h6>
       <a
         href={githubUrl}
         target="_blank"

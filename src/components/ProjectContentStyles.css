@@ -40,8 +40,13 @@
   padding-top: 20px;
   /* position: absolute; */
   bottom: 10px;
+  text-align: center;
   color: #0961a8;
   text-shadow: 2px 2px 4px rgba(185, 202, 248, 0.6);
+}
+.card h6:hover,
+.card p:hover {
+  color: #57b4db;
 }
 .card p {
   font-size: 16px;

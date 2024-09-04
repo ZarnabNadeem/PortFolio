@@ -33,22 +33,22 @@ const Navbar = () => {
         <h1>☾ZarNadeem</h1>{" "}
       </Link>
       <ul className={hamClick ? "nav-menu active" : "nav-menu"}>
-        <li>
+        <li className={location.pathname === "/" ? "active" : ""}>
           <Link to="/" onClick={() => setHamClick(false)}>
             <h4>Home</h4>
           </Link>
         </li>
-        <li>
+        <li className={location.pathname === "/about" ? "active" : ""}>
           <Link to="/about" onClick={() => setHamClick(false)}>
             <h4>About</h4>
           </Link>
         </li>
-        <li>
+        <li className={location.pathname === "/projects" ? "active" : ""}>
           <Link to="/projects" onClick={() => setHamClick(false)}>
             <h4>Projects</h4>
           </Link>
         </li>
-        <li>
+        <li className={location.pathname === "/contact" ? "active" : ""}>
           <Link to="/contact" onClick={() => setHamClick(false)}>
             <h4>Contact</h4>
           </Link>

@@ -9,3 +9,15 @@
 .education h3 {
   color: #285377;
 }
+.bord {
+  border-top: 1px solid #ffffff; /* Light border for styling */
+  border-left: 1px solid #ffffff;
+  border-radius: 8px; /* Rounded corners */
+  padding: 1rem;
+  /* background-color: #cfe8ff; Light background for better readability */
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+.bord:hover {
+  /* Slightly darker background on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}

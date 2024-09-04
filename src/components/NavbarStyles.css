@@ -22,6 +22,9 @@
   font-size: 1.2rem;
   font-weight: 500;
 }
+.nav-menu li.active a {
+  color: #ffffff; /* White color for active item */
+}
 .hamburger {
   display: none;
 }
